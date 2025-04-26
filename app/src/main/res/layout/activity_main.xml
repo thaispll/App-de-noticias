@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blue"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingBottom="20dp">
 
     <TextView
         android:id="@+id/textView"
@@ -24,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_titulo"
+        android:maxLines="1"
         android:padding="15dp"
         android:background="@color/white"
         android:layout_marginTop="50dp"
@@ -36,6 +45,7 @@
         android:layout_height="200dp"
         android:hint="@string/hint_noticia"
         android:padding="15dp"
+        android:inputType="text"
         android:gravity="start"
         android:background="@color/white"
         android:layout_marginTop="10dp"
@@ -46,21 +56,39 @@
         android:id="@+id/editDataNoticia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_data"
-        android:padding="15dp"
-        android:background="@color/white"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:hint="@string/hint_data"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/editAutorNoticia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_data"
+        android:hint="@string/hint_autor"
         android:padding="15dp"
         android:background="@color/white"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"/>
+        android:layout_marginEnd="20dp"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:id="@+id/btPublicarNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_button_publicar"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_margin="20dp"
+        />
 </LinearLayout>
+</ScrollView>

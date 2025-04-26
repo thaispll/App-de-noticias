@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362267815864",
+    "project_id": "app-de-noticias-ccc17",
+    "storage_bucket": "app-de-noticias-ccc17.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362267815864:android:44ae9cb1ccbbc7a031694d",
+        "android_client_info": {
+          "package_name": "br.com.codeschool.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk2CP1us3kOijmKDyW9aqn8ve1spaKpm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
