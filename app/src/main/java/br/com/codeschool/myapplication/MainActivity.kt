@@ -48,9 +48,16 @@ class MainActivity : AppCompatActivity() {
             .set(mapNoticias).addOnCompleteListener{ tarefa ->
                 if (tarefa.isSuccessful){
                     Toast.makeText(this, "Notícia publicada com sucesso!", Toast.LENGTH_SHORT).show()
+                    limparCampos()
                 }
             }.addOnFailureListener{
 
             }
+    }
+    private fun limparCampos(){
+        binding.editTituloNoticia.setText("")
+        binding.editNoticia.setText("")
+        binding.editAutorNoticia.setText("")
+        binding.editDataNoticia.setText("")
     }
 }
